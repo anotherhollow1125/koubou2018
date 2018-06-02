@@ -17,7 +17,7 @@ learning_rate = 0.1
 
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
-for i ini range(iters_num):
+for i in range(iters_num):
     batch_mask = np.random.choice(train_size, batch_size)
     x_batch = x_train[batch_mask]
     t_batch = t_train[batch_mask]
